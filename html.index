@@ -1,0 +1,139 @@
+# banda<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sitivin Reuben — Personal Website</title>
+  <meta name="description" content="Personal website for Sitivin Reuben: status, homeland, education, story, goals and contact." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#57b6ff; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#061024 0%, #071026 60%);color:#e6eef8}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#8de0ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042133}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    nav{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+    nav a{color:var(--accent);text-decoration:none;padding:8px 12px;border-radius:10px;background:var(--glass);font-weight:600}
+    main{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    h2{margin:0 0 12px 0}
+    dl{margin:0}
+    dt{font-weight:700}
+    dd{margin:6px 0 12px 0;color:var(--muted)}
+
+    .goals li{margin:8px 0}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Contact form */
+    form{display:grid;gap:8px}
+    input, textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    input::placeholder, textarea::placeholder{color:rgba(255,255,255,0.35)}
+    button{padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:#042133;font-weight:700;cursor:pointer}
+
+    /* Small screens */
+    @media (max-width:760px){.grid-2{grid-template-columns:1fr} .avatar{width:72px;height:72px;font-size:18px} h1{font-size:22px}}
+
+    /* subtle anchor link styles */
+    .muted-link{color:var(--muted);text-decoration:none;border-bottom:1px dashed rgba(255,255,255,0.03)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">SR</div>
+      <div>
+        <h1>Sitivin Reuben</h1>
+        <p class="lead">Hello — I'm a motivated person building my skills and working toward meaningful goals. This site shares my background, story, and what I'm aiming to achieve.</p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#goals">Goals</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <div class="grid-2">
+          <div>
+            <dl>
+              <dt>Status</dt>
+              <dd>Student / Learner (edit to your current status)</dd>
+
+              <dt>Homeland</dt>
+              <dd>Your homeland (for example: Malawi). Edit this line to state your country or town.</dd>
+
+              <dt>Education Level</dt>
+              <dd>High school / Vocational / University — add specific school and year (e.g., "Diploma in Computer Science, 2026").</dd>
+
+              <dt>Relationship Story</dt>
+              <dd>Optional: write a short, respectful summary if you want to share—e.g., "I value family and strong friendships."</dd>
+            </dl>
+          </div>
+
+          <div>
+            <h3>Quick bio</h3>
+            <p style="color:var(--muted)">I am passionate about learning, improving my English, and building skills in technology and communication. I enjoy solving problems and helping others grow.</p>
+
+            <h3 style="margin-top:12px">Skills & Interests</h3>
+            <ul class="goals">
+              <li>Learning English and writing clearly</li>
+              <li>Computer basics, networks, and software</li>
+              <li>Personal growth and education</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="goals" class="card">
+        <h2>My Goals</h2>
+        <p style="color:var(--muted)">Short-term and long-term goals that guide my work and studies.</p>
+        <ul>
+          <li><strong>Short-term:</strong> Improve English speaking and writing; finish current studies or courses.</li>
+          <li><strong>Mid-term:</strong> Get a job or internship in IT or education; build a portfolio of small projects.</li>
+          <li><strong>Long-term:</strong> Contribute to my community; continue learning and grow into a leadership role.</li>
+        </ul>
+      </section>
+
+      <section id="journey" class="card">
+        <h2>My Journey / Story</h2>
+        <p style="color:var(--muted)">A short, honest story about where I started and where I'm heading.</p>
+        <p>I grew up learning from my family and community. Along the way I faced challenges, but I kept studying and practicing English and technical skills. Each step taught me to keep trying and to help others when I can.</p>
+        <p style="color:var(--muted);font-size:13px;margin-top:10px">Tip: Replace this paragraph with your personal details — schools, important moments, and people who inspired you.</p>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact Me</h2>
+        <p style="color:var(--muted)">If you'd like to reach out, use the form below or message me on social media.</p>
+        <form onsubmit="event.preventDefault(); alert('This is a demo form — replace with your own email/service.');">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:14px">
+          <div>Email: <a class="muted-link" href="mailto:you@example.com">you@example.com</a> (edit me)</div>
+          <div style="margin-top:6px">Social: <a class="muted-link" href="#">@yourhandle</a> (edit to your profiles)</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="card" style="display:inline-block;padding:10px 14px;background:transparent;border:0;box-shadow:none;margin-top:16px">© <strong>Sitivin Reuben</strong> — Built for learning and sharing. Edit this site to make it truly yours.</div>
+    </footer>
+  </div>
+</body>
+</html>
